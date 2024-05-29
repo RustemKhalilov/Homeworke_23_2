@@ -1,8 +1,6 @@
 from django.db import models
 
 
-
-
 # Create your models here.
 class Category(models.Model):
     # Описание поля наименование
@@ -19,7 +17,7 @@ class Category(models.Model):
 
     # имя, порода, фото, дата рождения
     class Meta:
-        verbose_name = "Категория"
+        verbose_name = "Название категории"
         verbose_name_plural = "Категории"
    #     ordering = ["breed", "name"]
 
@@ -36,21 +34,20 @@ class Product(models.Model):
     )
     # Описание поля описаение
     description = models.TextField(
-        verbose_name="Название породы",
-        help_text="Введите описание породы",
+        verbose_name="Название продукта",
+        help_text="Введите описание продукта",
         blank=True,
         null=True,
     )
-
     # Описание поля категория
-    category = models.ForeignKey(
+    my_category = models.ForeignKey(
         Category,
         on_delete=models.SET_NULL,
-        verbose_name="Категория",
+        verbose_name="Категория продукта",
         help_text="Введите название категории",
         null=True,
         blank=True,
-        related_name="Category",
+        related_name="category_product",
     )
 
     # Описание поля изображение

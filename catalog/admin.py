@@ -6,8 +6,8 @@ from catalog.models import Category
 # Register your models here.
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'price', 'category')
-    list_filter = ('category',)
+    list_display = ('id', 'name', 'price', 'my_category')
+    list_filter = ('my_category',)
     search_fields = ('description',)
 
 
