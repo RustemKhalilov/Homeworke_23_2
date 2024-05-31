@@ -5,8 +5,9 @@ from django.db import models
 class Category(models.Model):
     # Описание поля наименование
     name = models.CharField(
-        max_length=100, verbose_name="Категория", help_text="Введите название категории"
-    )
+        max_length=100,
+        verbose_name="Категория",
+        help_text="Введите название категории")
     # Описание поля описаение
     description = models.TextField(
         verbose_name="Название категории",
@@ -19,7 +20,8 @@ class Category(models.Model):
     class Meta:
         verbose_name = "Название категории"
         verbose_name_plural = "Категории"
-   #     ordering = ["breed", "name"]
+
+    #     ordering = ["breed", "name"]
 
     def __str__(self):
         return self.name
@@ -66,18 +68,23 @@ class Product(models.Model):
     )
     # Описание поля дата создания записи
     created_at = models.DateTimeField(
-        blank=True, verbose_name="Дата записи в БД", help_text="Укажите дату создания записи БД"
+        blank=True,
+        verbose_name="Дата записи в БД",
+        help_text="Укажите дату создания записи БД",
     )
     # Описание поля дата изменения записи в БД
-    updated_at  = models.DateTimeField(
-        blank=True, verbose_name="Дата записи в БД", help_text="Укажите изменения записи в БД"
+    updated_at = models.DateTimeField(
+        blank=True,
+        verbose_name="Дата записи в БД",
+        help_text="Укажите изменения записи в БД",
     )
 
-    #Описание поля дата изменения дата производства
+    # Описание поля дата изменения дата производства
     manufactured_at = models.DateTimeField(
-        blank=True, verbose_name="Дата производства", help_text="Укажите дату производства"
+        blank=True,
+        verbose_name="Дата производства",
+        help_text="Укажите дату производства",
     )
-
 
     # имя, порода, фото, дата рождения
     class Meta:
@@ -86,6 +93,3 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
-
-

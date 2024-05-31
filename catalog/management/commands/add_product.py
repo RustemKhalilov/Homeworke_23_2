@@ -2,20 +2,19 @@ from django.core.management import BaseCommand
 from catalog.models import Category, Product
 import json
 
+
 class Command(BaseCommand):
 
     @staticmethod
     def json_read_categories():
-        with open('products_info.json', encoding='utf-8') as json_file:
+        with open("products_info.json", encoding="utf-8") as json_file:
             return json.load(json_file)
         # Здесь мы получаем данные из фикстур с категориями
 
     @staticmethod
     def json_read_products():
-        with open('products_info.json', encoding='utf-8') as json_file:
-             return json.load(json_file)
-
-
+        with open("products_info.json", encoding="utf-8") as json_file:
+            return json.load(json_file)
 
     def handle(self, *args, **options):
 
@@ -24,7 +23,6 @@ class Command(BaseCommand):
 
         # Удалите все категории
         Category.objects.all().delete()
-
 
         # Создайте списки для хранения объектов
         product_for_create = []
@@ -35,32 +33,35 @@ class Command(BaseCommand):
             if item["model"] == "catalog.category":
                 print(item)
                 category_for_create.append(
-                    Category(pk=item['pk'],
-                             name=item['fields']['name'],
-                             description=item['fields']['description'])
+                    Category(
+                        pk=item["pk"],
+                        name=item["fields"]["name"],
+                        description=item["fields"]["description"],
+                    )
                 )
 
         # Создаем объекты в базе с помощью метода bulk_create()
         print(category_for_create)
         Category.objects.bulk_create(category_for_create)
 
-        #Обходим все значения продуктов из фиктсуры для получения информации об одном объекте
+        # Обходим все значения продуктов из фиктсуры для получения информации об одном объекте
         for item in Command.json_read_products():
             if item["model"] == "catalog.product":
                 print(item)
                 product_for_create.append(
-                    Product(pk=item['pk'],
-                     name=item['fields']['name'],
-                     description=item['fields']['description'],
-                     my_category=Category.objects.get(pk=item['fields']['my_category']),
-                     foto=item['fields']['foto'],
-                     created_at=item['fields']['created_at'],
-                     updated_at=item['fields']['updated_at'],
-                     manufactured_at=item['fields']['manufactured_at'],
+                    Product(
+                        pk=item["pk"],
+                        name=item["fields"]["name"],
+                        description=item["fields"]["description"],
+                        my_category=Category.objects.get(
+                            pk=item["fields"]["my_category"]
+                        ),
+                        foto=item["fields"]["foto"],
+                        created_at=item["fields"]["created_at"],
+                        updated_at=item["fields"]["updated_at"],
+                        manufactured_at=item["fields"]["manufactured_at"],
+                    )
                 )
-                   )
-       # Создаем объекты в базе с помощью метода bulk_create()
+        # Создаем объекты в базе с помощью метода bulk_create()
         print(product_for_create)
         Product.objects.bulk_create(product_for_create)
-
-
