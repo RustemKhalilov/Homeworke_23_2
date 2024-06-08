@@ -78,7 +78,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "screencast",
+        "NAME": "georgin",
         "USER": "postgres",
         "PASSWORD": "triedinstvo",
         "HOST": "localhost",

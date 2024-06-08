@@ -72,19 +72,6 @@ class Product(models.Model):
         verbose_name="Дата записи в БД",
         help_text="Укажите дату создания записи БД",
     )
-    # Описание поля дата изменения записи в БД
-    updated_at = models.DateTimeField(
-        blank=True,
-        verbose_name="Дата записи в БД",
-        help_text="Укажите изменения записи в БД",
-    )
-
-    # Описание поля дата изменения дата производства
-    manufactured_at = models.DateTimeField(
-        blank=True,
-        verbose_name="Дата производства",
-        help_text="Укажите дату производства",
-    )
 
     # имя, порода, фото, дата рождения
     class Meta:
