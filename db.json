@@ -1,0 +1,877 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-06-07T19:22:30.950Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Зефир",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-06-07T19:23:39.182Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Колбаса и сыр",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-06-07T19:25:23.022Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Маршмеллоу",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-06-07T19:26:04.296Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Орехи и сухофрукты",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-06-07T19:29:43.483Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Авторский премиум-букет",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-06-07T19:33:28.644Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Большая композиция из зефирных цветов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-06-07T19:35:06.388Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Большая коробочка зефирных цветов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-06-07T19:36:04.724Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Большая премиальная композиция из зефирных цветов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-06-07T19:37:19.746Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Большой букет зефирных тюльпанов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-06-07T19:38:38.454Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Большой букет зефирных цветов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-06-07T19:39:00.848Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Большой букет зефирных цветов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-06-07T19:40:39.116Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Большой букет-премиум",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-06-07T19:42:20.382Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Букет зефирных тюльпанов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-06-07T19:46:01.908Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Букет зефирных цветов Любимый размер",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-06-07T19:47:24.818Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Букет из зефирных цветов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-06-07T19:48:27.796Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Букет с игрушкой",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-06-08T03:36:28.108Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Зефирная открытка",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-06-08T03:37:38.155Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Зефирные грибы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-06-08T03:38:56.712Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Зефирные цветы в открытой коробке",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-06-08T03:39:59.619Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Зефирные цветы в шляпных коробках",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-06-08T03:41:30.480Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Зефирный букет-премиум",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-06-08T03:47:58.682Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Композиция их зефирных цветов в цилиндре",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-06-08T03:48:52.479Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Коробочка с зефирными цветами 16*16 см",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-06-08T03:50:38.633Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Любимый букет зефирных тюльпанов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-06-08T03:52:18.036Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "Мишка в цветах",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-06-08T03:53:51.800Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "Премиальная композиция из зефирных цветов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-06-08T03:54:49.050Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "Премиум-корзина зефирных цветов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-06-08T03:57:25.495Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Конверт колбасно-сырный",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-06-08T03:57:46.892Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Конверт колбасно-сырный",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u0443\\u043a\\u0442\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-06-08T04:25:23.144Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Конверт колбасно-сырный",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-06-08T04:26:38.849Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Маршмелята в коробке Стандарт",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-06-08T04:28:09.036Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "Большая композиция в сумочке",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-06-08T04:29:31.278Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Большой полезный букет",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-06-08T04:29:42.986Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Большой полезный букет",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-06-08T04:29:58.873Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Большой полезный букет",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-06-08T04:30:56.583Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "27",
+    "object_repr": "Букет с манговыми розами",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-06-08T04:31:42.892Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "28",
+    "object_repr": "Орехи и сухофрукты в сумочке",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$o0Kipm4wcKtOlshjQHpQFL$EloEajVADHCcSOpoAUH26saBabyjbrS49N0w3O5YDxY=",
+    "last_login": "2024-06-06T22:35:24.472Z",
+    "is_superuser": true,
+    "username": "rustem",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-06-06T22:34:47.547Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2r952c2x2slaknsfwo6zk51ya29da80g",
+  "fields": {
+    "session_data": ".eJxVjEsOAiEQBe_C2hCw-Tgu3XsG0jSNjBpIhpmV8e5KMgvdvqp6LxFwW0vYOi9hTuIstDj8bhHpwXWAdMd6a5JaXZc5yqHInXZ5bYmfl939OyjYy6gVe5owg5pczl4TW9JWgzHRARAeSSltyLEjZWwmcPZrMrA3OZl4Eu8P5lw3yg:1sFLhc:g-ENRgSn0oit4DpYGCB7cnY1kSDvr2VVS5C94-yLa30",
+    "expire_date": "2024-06-20T22:35:24.475Z"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 1,
+  "fields": {
+    "name": "Зефир",
+    "description": "Зефирные букеты, композиции, наборы, корзинки"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 2,
+  "fields": {
+    "name": "Колбаса и сыр",
+    "description": "Букеты, композиции, наборы из колбасных изделий и сыра"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 3,
+  "fields": {
+    "name": "Маршмеллоу",
+    "description": "Букеты и коробочки из машрмеллоу"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 4,
+  "fields": {
+    "name": "Орехи и сухофрукты",
+    "description": "Букеты, композиции, наборы из орехов и сухофруктов"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 1,
+  "fields": {
+    "name": "Авторский премиум-букет",
+    "description": "Букет для ценителей прекрасного, этот букет будет лучшим подарком, который вы когда-либо дарили.\r\n\r\nКаждый цветок максимально реалистичен и скрывает в себе микс начинок: миндаль, манго, вафельная крошка, шоколад, сублимированная клубника, кокос,\r\n\r\nПочти все цветы в букете относятся к сложным в реализации, к тому же они расположены на разных уровнях, за счет чего букет выглядит особенно роскошно.",
+    "my_category": 1,
+    "foto": "catalog/photo/Авторский_премиум-букет.jpg",
+    "price": "10000",
+    "created_at": "2024-06-07T19:29:41Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 2,
+  "fields": {
+    "name": "Большая композиция из зефирных цветов",
+    "description": "Прекрасная композиция в цилиндре из цветов, каждый лепесток которых изготовлен из вкуснейшего фруктового зефира .",
+    "my_category": 1,
+    "foto": "catalog/photo/Большая_композиция_из_зефирных_цветов.jpg",
+    "price": "3500",
+    "created_at": "2024-06-07T19:33:27Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 3,
+  "fields": {
+    "name": "Большая коробочка зефирных цветов",
+    "description": "Универсальный подарок на любой повод.\r\nНежный десерт и цветы в одном!\r\n\r\nАссорти зефирных цветов в большой коробке.",
+    "my_category": 1,
+    "foto": "catalog/photo/Большая_коробочка_зефирных_цветов.jpg",
+    "price": "2800",
+    "created_at": "2024-06-07T19:35:01Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 4,
+  "fields": {
+    "name": "Большая премиальная композиция из зефирных цветов",
+    "description": "Роскошная композиция в цилиндре из цветов, каждый лепесток которых изготовлен из вкуснейшего фруктового зефира с добавлением микса сублиматов и орехов (миндаль, вафельная крошка, шоколад, сублимированная клубника,, кокос).\r\n\r\nЦветы в композиции расположены на разных уровнях, за счет чего букет выглядит особенно реалистично и восхитительно.",
+    "my_category": 1,
+    "foto": "catalog/photo/Большая_премиальная_композиция_из_зефирных_цветов.jpg",
+    "price": "5000",
+    "created_at": "2024-06-07T19:36:03Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 5,
+  "fields": {
+    "name": "Большой букет зефирных тюльпанов",
+    "description": "Красивейшие цветы - тюльпаны, которые изготовлены из вкуснейшего крафтового фруктового зефира.",
+    "my_category": 1,
+    "foto": "catalog/photo/Большой_букет_зефирных_тюльпанов.jpg",
+    "price": "3500",
+    "created_at": "2024-06-07T19:37:17Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 6,
+  "fields": {
+    "name": "Большой букет зефирных цветов",
+    "description": "Восхитительный букет из цветов, каждый лепесток которых изготовлен из вкуснейшего крафтового фруктового зефира.\r\n\r\nБольшой букет зефирных цветов точно сразит наповал!",
+    "my_category": 1,
+    "foto": "catalog/photo/Большой_букет_зефирных_тюльпанов_cGNBetU.jpg",
+    "price": "4000",
+    "created_at": "2024-06-07T19:38:37Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 7,
+  "fields": {
+    "name": "Большой букет-премиум",
+    "description": "Большой роскошный букет из цветов, каждый лепесток которых изготовлен из вкуснейшего фруктового зефира с добавлением микса сублиматов и орехов (миндаль, вафельная крошка/орео, шоколад, сублимированная клубника, кокос).\r\n\r\nПочти все цветы в букете относятся к сложным в реализации, к тому же они расположены на разных уровнях, за счет чего букет выглядит особенно реалистично и восхитительно.\r\n\r\nСамих цветов в букете больше, чем в букетах такого же размера, но не из линейки Премиум.",
+    "my_category": 1,
+    "foto": "catalog/photo/Большой_букет-премиум.jpg",
+    "price": "6000",
+    "created_at": "2024-06-07T19:40:37Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 8,
+  "fields": {
+    "name": "Букет зефирных тюльпанов",
+    "description": "Красивейшие цветы - тюльпаны, которые изготовлены из вкуснейшего крафтового фруктового зефира.",
+    "my_category": 1,
+    "foto": "catalog/photo/Букет_зефирных_тюльпанов.jpg",
+    "price": "2300",
+    "created_at": "2024-06-07T19:42:18Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 9,
+  "fields": {
+    "name": "Букет зефирных цветов Любимый размер",
+    "description": "Восхитительный букет из цветов, каждый лепесток которых изготовлен из вкуснейшего крафтового фруктового зефира.",
+    "my_category": 1,
+    "foto": "catalog/photo/Букет_зефирных_цветов_Любимый_размер.jpg",
+    "price": "3300",
+    "created_at": "2024-06-07T19:45:58Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 10,
+  "fields": {
+    "name": "Букет из зефирных цветов",
+    "description": "Прекрасный букет из цветов, каждый лепесток которых изготовлен из вкуснейшего фруктового зефира.",
+    "my_category": 1,
+    "foto": "catalog/photo/Букет_из_зефирных_цветов.jpg",
+    "price": "2500",
+    "created_at": "2024-06-07T19:47:18Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 11,
+  "fields": {
+    "name": "Букет с игрушкой",
+    "description": "Восхитительный букет из цветов, каждый лепесток которых изготовлен из вкуснейшего фруктового зефира с милейшей игрушкой Мишки, который тоже полностью съедобен (из зефира). По желанию медведя можно заменить котиком/зайкой и т.д. Цвет и виды цветов обсуждаются. Можно сделать как для девочки, так и для мальчика.",
+    "my_category": 1,
+    "foto": "catalog/photo/Букет_с_игрушкой.jpg",
+    "price": "3500",
+    "created_at": "2024-06-07T19:48:26Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 12,
+  "fields": {
+    "name": "Зефирная открытка",
+    "description": "Когда нужен комплимент выручит эффектная открытка с зефирными цветами!\r\n\r\nНежный десерт и цветы в одном!",
+    "my_category": 1,
+    "foto": "catalog/photo/Зефирная_открытка.jpg",
+    "price": "600",
+    "created_at": "2024-06-08T03:36:26Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 13,
+  "fields": {
+    "name": "Зефирные грибы",
+    "description": "Потрясающий десерт для тех кого трудно удивить!\r\nНежная текстура грибочков органично сочетается с вкуснейшим какао на шапочках грибов. А их натуральный внешний вид вызовет неподдельный восторг.\r\n\r\nВаш подарок точно запомнят на всегда!",
+    "my_category": 1,
+    "foto": "catalog/photo/Зефирные_грибы.jpg",
+    "price": "1800",
+    "created_at": "2024-06-08T03:37:27Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 14,
+  "fields": {
+    "name": "Зефирные цветы в открытой коробке",
+    "description": "Универсальный подарок на любой повод.\r\nНежный десерт и цветы в одном!\r\n\r\nАссорти зефирных цветов в эффектных коробочках.",
+    "my_category": 1,
+    "foto": "catalog/photo/Зефирные_цветы_в_открытой_коробке.jpg",
+    "price": "1000",
+    "created_at": "2024-06-08T03:38:47Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 15,
+  "fields": {
+    "name": "Зефирные цветы в шляпных коробках",
+    "description": "Эффектные шляпные коробочки, наполненные восхитительно нежными зефирными цветами.\r\nСтильно. Вкусно.",
+    "my_category": 1,
+    "foto": "catalog/photo/Зефирные_цветы_в_шляпных_коробках.jpg",
+    "price": "2300",
+    "created_at": "2024-06-08T03:39:58Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 16,
+  "fields": {
+    "name": "Зефирный букет-премиум",
+    "description": "Роскошный букет из цветов, каждый лепесток которых изготовлен из вкуснейшего крафтового зефира с добавлением микса сублиматов и орехов (миндаль, вафельная крошка, шоколад, сублимированная клубника,, кокос).\r\n\r\nЦветы в букете расположены на разных уровнях, за счет чего букет выглядит особенно реалистично и восхитительно.",
+    "my_category": 1,
+    "foto": "catalog/photo/Зефирный_букет-премиум.jpg",
+    "price": "4500",
+    "created_at": "2024-06-08T03:41:29Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 17,
+  "fields": {
+    "name": "Композиция их зефирных цветов в цилиндре",
+    "description": "Прекрасная композиция в цилиндре из цветов, каждый лепесток которых изготовлен из вкуснейшего фруктового зефира .",
+    "my_category": 1,
+    "foto": "catalog/photo/Композиция_их_зефирных_цветов_в_цилиндре.jpg",
+    "price": "2500",
+    "created_at": "2024-06-08T03:47:57Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 18,
+  "fields": {
+    "name": "Коробочка с зефирными цветами 16*16 см",
+    "description": "Когда нужен комплимент или красивые цветы к основному подарку, выручит эффектная коробочка ароматных зефирных цветов.\r\n\r\nНежный десерт и цветы в одном!",
+    "my_category": 1,
+    "foto": "catalog/photo/Коробочка_с_зефирными_цветами_16_16_см.jpg",
+    "price": "1200",
+    "created_at": "2024-06-08T03:48:51Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 19,
+  "fields": {
+    "name": "Любимый букет зефирных тюльпанов",
+    "description": "Красивейшие цветы - тюльпаны, которые изготовлены из вкуснейшего крафтового фруктового зефира.\r\n\r\nСамый заказываемый букет тюльпанов это конечно",
+    "my_category": 1,
+    "foto": "catalog/photo/Любимый_букет_зефирных_тюльпанов.jpg",
+    "price": "2800",
+    "created_at": "2024-06-08T03:50:36Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 20,
+  "fields": {
+    "name": "Мишка в цветах",
+    "description": "Концентрат милоты и нежности в круглых коробках!\r\n\r\nМишка и цветы из фруктового зефира пониженной сладости в тандеме с маршмелятами вызовут восторг и у ребенка и у женщин всех возрастов!",
+    "my_category": 1,
+    "foto": "catalog/photo/Мишка_в_цветах.jpg",
+    "price": "2500",
+    "created_at": "2024-06-08T03:52:17Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 21,
+  "fields": {
+    "name": "Премиальная композиция из зефирных цветов",
+    "description": "Роскошная композиция в цилиндре из цветов, каждый лепесток которых изготовлен из вкуснейшего фруктового зефира с добавлением микса сублиматов и орехов (миндаль, вафельная крошка, шоколад, сублимированная клубника,, кокос).\r\n\r\nЦветы в композиции расположены на разных уровнях, за счет чего букет выглядит особенно реалистично и восхитительно.",
+    "my_category": 1,
+    "foto": "catalog/photo/Премиальная_композиция_из_зефирных_цветов.jpg",
+    "price": "3500",
+    "created_at": "2024-06-08T03:53:50Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 22,
+  "fields": {
+    "name": "Премиум-корзина зефирных цветов",
+    "description": "Очаровательные корзинки с цветами из фруктового зефира несомненно удивят и понравятся. Ваш подарок будет в центре внимания!\r\n\r\nКомпозиция в корзине из цветов, каждый лепесток которых изготовлен из вкуснейшего фруктового зефира с добавлением микса сублиматов и орехов (миндаль (или любой орех), вафельная крошка, шоколад, сублимированная клубника,, кокос).",
+    "my_category": 1,
+    "foto": "catalog/photo/Премиум-корзина_зефирных_цветов.jpg",
+    "price": "5500",
+    "created_at": "2024-06-08T03:54:47Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 23,
+  "fields": {
+    "name": "Конверт колбасно-сырный",
+    "description": "Ароматный и аппетитный конверт, где собрано все самое вкусное!\r\nДля мужчин и девушек просто незабываемый подарок!",
+    "my_category": 2,
+    "foto": "catalog/photo/Конверт_колбасно-сырный.jpg",
+    "price": "4500",
+    "created_at": "2024-06-08T03:57:23Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 24,
+  "fields": {
+    "name": "Маршмелята в коробке Стандарт",
+    "description": "Забавные маршмелята нравятся и детям и взрослым.\r\nМилые игрушки, которые можно с удовольствием съесть.\r\nА ещё они волшебным образом превращаются во вкусную и ароматную пёнку в вашем любимом напитке: чае, кофе или какао.",
+    "my_category": 3,
+    "foto": "",
+    "price": "1700",
+    "created_at": "2024-06-08T04:26:24Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 25,
+  "fields": {
+    "name": "Большая композиция в сумочке",
+    "description": "Большая и полезная композиция из микса орехов, сухофруктов и желейных конфеток.\r\nДиаметр букета около 21-22 см, вес не менее 1000 гр",
+    "my_category": 4,
+    "foto": "catalog/photo/Большая_композиция_в_сумочке.jpg",
+    "price": "2500",
+    "created_at": "2024-06-08T04:28:07Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 26,
+  "fields": {
+    "name": "Большой полезный букет",
+    "description": "Вкусный и очень эффектный букет из микса орехов и сухофруктов.\r\n\r\nТакой букет несомненно будет отличным подарком любому, его запомнят и с удовольствием будут им хвастаться, ведь это очень не обычно и полезно!",
+    "my_category": 4,
+    "foto": "catalog/photo/Большой_полезный_букет.jpg",
+    "price": "6000",
+    "created_at": "2024-06-08T04:29:29Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 27,
+  "fields": {
+    "name": "Букет с манговыми розами",
+    "description": "Вкусный и очень эффектный букет из микса орехов и сухофруктов. Изюминка букета - манговые розы, которые придают букету очарование.\r\n\r\nТакой букет несомненно будет отличным подарком любому, его запомнят и с удовольствием будут им хвастаться, ведь это очень не обычно и полезно!",
+    "my_category": 4,
+    "foto": "catalog/photo/Букет_с_манговыми_розами.jpg",
+    "price": "5000",
+    "created_at": "2024-06-08T04:30:55Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 28,
+  "fields": {
+    "name": "Орехи и сухофрукты в сумочке",
+    "description": "Красивая и полезная композиция из микса орехов, сухофруктов и желейных конфеток.\r\nДиаметр букета около 17-19 см, вес не менее 500 гр",
+    "my_category": 4,
+    "foto": "catalog/photo/Орехи_и_сухофрукты_в_сумочке.jpg",
+    "price": "1700",
+    "created_at": "2024-06-08T04:31:41Z"
+  }
+}
+]
