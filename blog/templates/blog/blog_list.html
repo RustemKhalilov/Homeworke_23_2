@@ -3,27 +3,28 @@
 {% block content %}
 <div class="row text-center">
     <a class="btn btn-primary" role="button"
-       href="{% url 'blog:create' %}">Создать</a>
-    {% for product in object_list %}
+       href="{% url 'blog:create' %}">Создать блог</a>
+    {% for Blog in object_list %}
+    {% if Blog.published %}
     <div class="col-4">
         <div class="card mb-4 box-shadow">
             <div class="card-header">
-                {% if product.imagery %}
+                {% if Blog.imagery %}
                 <img src="{{ product.imagery | media_filter }}">
                 {% endif %}
-                <h4 class="my-0 font-weight-normal">{{ product.category }}</h4>
             </div>
             <div class="card-body">
                 <a class="btn btn-primary" role="button"
-                   href="{% url 'blog:view' product.pk %}">Посмотреть</a>
+                   href="{% url 'blog:view' Blog.pk %}">Посмотреть</a>
                 <a class="btn btn-primary" role="button"
-                   href="{% url 'blog:edit' product.pk %}">Редактировать</a>
+                   href="{% url 'blog:edit' Blog.pk %}">Редактировать</a>
                 <a class="btn btn-primary" role="button"
-                   href="{% url 'blog:delete' product.pk %}">Удалить</a>
+                   href="{% url 'blog:delete' Blog.pk %}">Удалить</a>
             </div>
         </div>
 
     </div>
+     {% endif %}
     {% endfor %}
 </div>
 {% endblock %}
