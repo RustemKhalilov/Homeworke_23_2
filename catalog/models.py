@@ -80,3 +80,21 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Version(models.Model):
+    name = models.ForeignKey(Product, verbose_name='продукт', on_delete=models.CASCADE, related_name='versions')
+    version_number = models.PositiveIntegerField(verbose_name='Номер версии')
+    version_name = models.CharField(max_length=100, verbose_name="Название версии")
+    version_now = models.BooleanField(
+        default=True, verbose_name="Признак текущей версии"
+    )
+
+    def __str__(self):
+        # Строковое отображение объекта
+        return f"{self.version_name} | {self.version_number}"
+
+
+    class Meta:
+        verbose_name = "Версия"  # Настройка для наименования одного объекта
+        verbose_name_plural = "Версии"  # Настройка для наименования набора объектов
