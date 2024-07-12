@@ -3,15 +3,15 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from catalog.apps import CatalogConfig
-from catalog.views import contacts, ProductDetailView, ProductListView, ProductUpdateView
+from catalog.views import contacts, ProductDetailView, ProductListView, ProductUpdateView, ProductCreateView
 
 app_name = CatalogConfig.name
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", ProductListView.as_view(), name="product_list"),
-    path('product/<int:pk>/', ProductDetailView.as_view(), name="product_detail"),
-    path('create/', ProductDetailView.as_view(), name="product_detail"),
-    path('update/<int:pk>/', ProductUpdateView.as_view(), name="product_detail"),
-    path("contacts/", contacts, name="catalog"),
+    path("", ProductListView.as_view(), name="list"),
+    path('create/', ProductCreateView.as_view(), name="create"),
+    path('view/<int:pk>/', ProductDetailView.as_view(), name="view"),
+    path('update/<int:pk>/', ProductUpdateView.as_view(), name="edit"),
+    path("contacts/", contacts, name="contact"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

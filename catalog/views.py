@@ -6,25 +6,14 @@ from catalog.models import Product, Version
 from catalog.forms import ProductForm, VersionForm
 
 
-# def home(request):
-#     Products = Product.objects.all()
-#     contex = {"Products": Products}
-#     return render(request, "product_list.html", contex)
-
-
-# def product_detail(request, pk):
-#     Product_detal = Product.objects.get(pk=pk)
-#     contex = {"Products": Product_detal}
-#     return render(request, "product_detail.html", contex)
-
 class ProductListView(ListView):
     model = Product
 
     def get_context_data(self, *args, **kwargs):
         context_data = super().get_context_data(*args, **kwargs)
-        products = Product.objects.all()
+        Products = Product.objects.all()
 
-        for product in products:
+        for product in Products:
             versions = Version.objects.filter(name=product)
             active_versions = versions.filter(version_now=True)
             if active_versions:
@@ -32,7 +21,7 @@ class ProductListView(ListView):
             else:
                 product.active_version = 'Нет активной версии'
 
-        context_data['object_list'] = products
+        context_data['object_list'] = Products
         return context_data
 
 
@@ -54,20 +43,22 @@ class ProductDetailView(DetailView):
         else:
             product.active_version = 'Нет активной версии'
 
-        context['version'] = product.active_version
-        context['version_list'] = versions
+        context['object_list'] = product
+        return context
+        # context['version'] = product.active_version
+        # context['version_list'] = versions
 
 
 class ProductCreateView(CreateView):
     model = Product
     form_class = ProductForm
-    success_url = reverse_lazy('catalog:products_list')
+    success_url = reverse_lazy('catalog:list')
 
 
 class ProductUpdateView(UpdateView):
     model = Product
     form_class = ProductForm
-    success_url = reverse_lazy('catalog:products_list')
+    success_url = reverse_lazy('catalog:list')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

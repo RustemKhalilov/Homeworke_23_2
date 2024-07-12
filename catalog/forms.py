@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import ModelForm, BooleanField
 
-from catalog.models import Product
+from catalog.models import Product, Version
 
 
 class StyleMixin(ModelForm):
@@ -42,5 +42,5 @@ class ProductForm(StyleMixin, forms.ModelForm):
 
 class VersionForm(StyleMixin, forms.ModelForm):
     class Meta:
-        model = Product
+        model = Version
         fields = '__all__'
