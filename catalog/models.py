@@ -1,4 +1,6 @@
 from django.db import models
+from users.models import User
+from config.settings import NULLABLE
 
 
 # Create your models here.
@@ -73,7 +75,14 @@ class Product(models.Model):
         help_text="Укажите дату создания записи БД",
     )
 
-    # имя, порода, фото, дата рождения
+    owner = models.ForeignKey(
+        User,
+        verbose_name='Владелец',
+        help_text='Укажите владельца',
+        on_delete=models.SET_NULL,
+        **NULLABLE
+    )
+
     class Meta:
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
@@ -93,7 +102,6 @@ class Version(models.Model):
     def __str__(self):
         # Строковое отображение объекта
         return f"{self.version_name} | {self.version_number}"
-
 
     class Meta:
         verbose_name = "Версия"  # Настройка для наименования одного объекта
