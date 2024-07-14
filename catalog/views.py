@@ -1,7 +1,8 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.forms import inlineformset_factory
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, TemplateView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from catalog.models import Product, Version
 from catalog.forms import ProductForm, VersionForm
 
@@ -29,7 +30,7 @@ def contacts(request):
     return render(request, "shyprocontacts.html")
 
 
-class ProductDetailView(DetailView):
+class ProductDetailView(LoginRequiredMixin, DetailView):
     model = Product
 
     def get_context_data(self, **kwargs):
@@ -45,17 +46,22 @@ class ProductDetailView(DetailView):
 
         context['object_list'] = product
         return context
-        # context['version'] = product.active_version
-        # context['version_list'] = versions
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(LoginRequiredMixin, CreateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy('catalog:list')
 
+    def form_valid(self, form):
+        Product = form.save()
+        user = self.request.user
+        Product.owner = user
+        Product.save()
+        return super().form_valid(form)
 
-class ProductUpdateView(UpdateView):
+
+class ProductUpdateView(LoginRequiredMixin, UpdateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy('catalog:list')

@@ -1,4 +1,3 @@
-from django.shortcuts import get_object_or_404, redirect
 from pytils.translit import slugify
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
@@ -61,6 +60,3 @@ class BlogDetailView(DetailView):
 class BlogDeleteView(DeleteView):
     model = Blog
     success_url = reverse_lazy('blog:list')
-
-
-

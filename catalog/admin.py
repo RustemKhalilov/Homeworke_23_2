@@ -4,6 +4,7 @@ from catalog.models import Category
 from catalog.models import Version
 from users.models import User
 
+
 # Register your models here.
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
@@ -23,5 +24,5 @@ class VersionAdmin(admin.ModelAdmin):
 
 
 @admin.register(User)
-class VersionAdmin(admin.ModelAdmin):
+class UserAdmin(admin.ModelAdmin):
     list_display = ("username", "email", "phone", "country")
