@@ -1,10 +1,11 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import PermissionDenied
 from django.forms import inlineformset_factory
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from catalog.models import Product, Version
-from catalog.forms import ProductForm, VersionForm
+from catalog.forms import ProductForm, VersionForm, ProductModeratorForm
 
 
 class ProductListView(ListView):
@@ -34,7 +35,6 @@ class ProductDetailView(LoginRequiredMixin, DetailView):
     model = Product
     login_url = reverse_lazy('users:login')
 
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         product = self.get_object()
@@ -56,7 +56,6 @@ class ProductCreateView(LoginRequiredMixin, CreateView):
     success_url = reverse_lazy('catalog:list')
     login_url = reverse_lazy('users:login')
 
-
     def form_valid(self, form):
         Product = form.save()
         user = self.request.user
@@ -70,7 +69,6 @@ class ProductUpdateView(LoginRequiredMixin, UpdateView):
     form_class = ProductForm
     success_url = reverse_lazy('catalog:list')
     login_url = reverse_lazy('users:login')
-
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -91,3 +89,12 @@ class ProductUpdateView(LoginRequiredMixin, UpdateView):
             return super().form_valid(form)
         else:
             return self.render_to_response(self.get_context_data(form=form, formset=formset))
+
+    def get_form_class(self):
+        user = self.request.user
+        if user == self.object.owner:
+            return ProductForm
+        if user.has_perm("Product.can_edit_publication") and user.has_perm("Product.can_edit_dicription") and user.has_perm(
+                "Product.can_edit_category"):
+            return ProductModeratorForm
+        raise PermissionDenied

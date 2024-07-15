@@ -40,6 +40,22 @@ class ProductForm(StyleMixin, forms.ModelForm):
         return cleaned_data
 
 
+class ProductModeratorForm(StyleMixin, forms.ModelForm):
+    class Meta:
+        model = Product
+        fields = ('description', 'my_category', 'is_published')
+
+    def clean_description(self):
+        cleaned_data = self.cleaned_data['description']
+        bad_words = ['казино', 'криптовалюта', 'крипта', 'биржа', 'дешево', 'бесплатно', 'обман', 'полиция', 'радар']
+
+        for word in bad_words:
+            if word in cleaned_data:
+                raise forms.ValidationError(f'Недопустимое слово: {word}')
+
+        return cleaned_data
+
+
 class VersionForm(StyleMixin, forms.ModelForm):
     class Meta:
         model = Version

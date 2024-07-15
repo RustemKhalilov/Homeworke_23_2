@@ -10,7 +10,7 @@ class Category(models.Model):
         max_length=100,
         verbose_name="Категория",
         help_text="Введите название категории")
-    # Описание поля описаение
+    # Описание поля описание
     description = models.TextField(
         verbose_name="Название категории",
         help_text="Введите описание категории",
@@ -18,7 +18,6 @@ class Category(models.Model):
         null=True,
     )
 
-    # имя, порода, фото, дата рождения
     class Meta:
         verbose_name = "Название категории"
         verbose_name_plural = "Категории"
@@ -83,9 +82,20 @@ class Product(models.Model):
         **NULLABLE
     )
 
+    is_published = models.BooleanField(
+        default=False,
+        verbose_name="Опубликован"
+    )
+
+
     class Meta:
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
+        permissions = [
+                       ("can_edit_publication", "Can_edit_publication"),
+                       ("can_edit_dicription", "Can_edit_dicription"),
+                       ("can_edit_category", "Can_edit_category")
+                       ]
 
     def __str__(self):
         return self.name
