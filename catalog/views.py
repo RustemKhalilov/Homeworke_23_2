@@ -4,12 +4,16 @@ from django.forms import inlineformset_factory
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
-from catalog.models import Product, Version
+from catalog.models import Product, Version, Category
 from catalog.forms import ProductForm, VersionForm, ProductModeratorForm
+from catalog.services import get_product_from_cache, get_category_from_cache
 
 
 class ProductListView(ListView):
     model = Product
+
+    def get_queryset(self):
+        return get_product_from_cache()
 
     def get_context_data(self, *args, **kwargs):
         context_data = super().get_context_data(*args, **kwargs)
@@ -99,3 +103,10 @@ class ProductUpdateView(LoginRequiredMixin, UpdateView):
                            "catalog.can_edit_category"]):
             return ProductModeratorForm
         raise PermissionDenied
+
+
+class CategoryListView(ListView):
+    model = Category
+
+    def get_queryset(self):
+        return get_category_from_cache()
