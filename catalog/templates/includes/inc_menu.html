@@ -10,7 +10,10 @@
           <ul class="list-unstyled">
             <li><a href="{% url 'catalog:list' %}" class="text-white">Главная</a></li>
             {% if user.is_authenticated %}
-            <li><a href="{% url 'users:logout' %}" class="text-white">Выход</a></li>
+             <form method="post" action="{% url 'users:logout' %}">
+                {% csrf_token %}
+                <button type="submit" class="nav-link bg-danger ms-2">Выход</button>
+             </form>
             {% else %}
             <li><a href="{% url 'users:login' %}" class="text-white">Вход</a></li>
             <li><a href="{% url 'users:register' %}" class="text-white">Регистрация</a></li>
